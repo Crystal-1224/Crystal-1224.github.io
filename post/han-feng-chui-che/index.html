@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<title>
+    Jane&#39;s world
+</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://crystal-1224.github.io/">
+
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Jane">
+<meta name="description" content="我无坚不催，也无所不能">
+<meta name="keywords" content="">
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/css/style.min.css" />
+
+<link rel="stylesheet" href="https://crystal-1224.github.io//styles/main.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.2/assets/media/css/tags.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!-- 原  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+-->
+<!--
+<script src="https://src.wangriyu.wang/lib/Aplayer/APlayer.min.js"></script>
+-->
+<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/APlayer.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    
+
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/script.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/icon.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.2/assets/media/script/loading.js" />
+
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atelier-estuary-dark.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+                
+			<!-- 百度统计 -->
+		    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/live2d/css/live2d.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://crystal-1224.github.io/">
+                    Jane&#39;s world
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        🎏 首页
+                    </a>
+                    
+                    <a class="menu-item" href="/posts">
+                        📃 文章列表
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        📔 归档
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        🔖 标签
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        👦 关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+            <form id="gridea-search-form" data-update="1701069383611" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
+				   -moz-border-radius:8px;
+				   -ms-border-radius:8px;
+				   -o-border-radius:8px;
+				   border-radius:8px;
+				   border:1px solid #e7f3f9;
+				   outline:none;
+				   padding:7px 0px;
+				   BACKGROUND-COLOR: transparent">
+            </form>
+        </div>
+
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://crystal-1224.github.io/">
+                            Jane&#39;s world
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1701069383611" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
+				   -moz-border-radius:8px;
+				   -ms-border-radius:8px;
+				   -o-border-radius:8px;
+				   border-radius:8px;
+				   border:1px solid #62a3d3;
+				   outline:none;
+				   padding:7px 0px;
+				   BACKGROUND-COLOR: transparent">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            🎏 首页
+                        </a>
+                        
+                        <a class="menu-item" href="/posts">
+                            📃 文章列表
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            📔 归档
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            🔖 标签
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            👦 关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+
+<style>
+input:focus{
+/* 
+            outline: 0;
+	    border: 1px solid #f95d5d;
+	    box-shadow: 0px 0px 10px 0px #f95d5d;
+*/
+	    border-style:solid;  
+            border-color: #03a9f4;  
+            box-shadow: 0 0 15px #03a9f4;
+  }
+</style>
+
+<script>
+
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+        <div class="main">
+            <div class="container">
+                <article class="post-wrap">
+                    <header class="post-header">
+                        <h1 class="post-title">
+                            《寒风吹彻》
+                        </h1>
+                        <!--en-->
+                        <div class="post-meta en">
+                            Author:
+                            <a itemprop="author" rel="author" href="/">
+                            Jane
+<!--
+                                Jane's world
+-->
+                            </a>
+                            <span class="post-time">
+                                Date: <a href="#">2023-11-25 23:47:32</a>
+                            </span>
+				<span class="post-readtime">Reading Time:<a href="#">10.4 mins</a></span>
+                                <span class="post-words">words:<a href="#">3122</a></span>
+                            
+                            <span class="post-category">
+                                Category:
+                                
+                                <a href="https://crystal-1224.github.io/tag/life/">生活</a>
+                                
+                            </span>
+                            
+
+
+
+                        </div>
+                        <!--zh-->
+                        <div class="post-meta zh">
+                            &#x4F5C;&#x8005;:
+                            <a itemprop="author" rel="author" href="/">				
+                            Jane
+<!--
+                                Jane's world
+-->
+                            </a>
+                            <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-11-25 23:47:32</a></span>
+			    <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a href="#">10.4 &#x5206;&#x949F;</a></span>
+                                <span class="post-words">&#x5B57;&#x6570;:<a href="#">3122</a></span>
+                            
+                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://crystal-1224.github.io/tag/life/">生活</a>
+                                
+                            </span>
+                            
+<!-- 分享 -->
+				<span style="margin-right:15px">
+				<i class="post-share"></i>
+				<span>&#x5206;&#x4EAB;:</span>
+				<a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://crystal-1224.github.io/post/han-feng-chui-che/"><i class="fa fa-qrcode"></i></a>
+				<a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://crystal-1224.github.io/post/han-feng-chui-che/&sharesource=qzone&title=《寒风吹彻》&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
+				<a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://crystal-1224.github.io/post/han-feng-chui-che/&sharesource=weibo&title=《寒风吹彻》 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
+				</span>
+
+                        </div>
+                    </header>
+                    <div class="post-content">
+                        <p>雪落在那些年雪落过的地方，我已经不注意它们了。比落雪更重要的事情开始降临到生活中。三十岁的我，似乎对这个冬天的来临漠不关心，却又好像一直在倾听落雪的声音，期待着又一场雪悄无声息地覆盖村庄和田野。<br>
+我静坐在屋子里，火炉上烤着几片馍馍，一小碟咸菜放在炉旁的木凳上，屋里光线暗淡。许久以后我还记起我在这样的一个雪天，围抱火炉，吃咸菜啃馍馍想着一些人和事情，想得深远而入神。柴禾在炉中啪啪地燃烧着，炉火通红，我的手和脸都烤得发烫了，脊背却依旧凉飕飕飓的。寒风正从我看不见的一道门缝吹进来。冬天又一次来到村里，来到我的家。我把怕冻的东西一一搬进屋子，糊好窗户，挂上去年冬天的棉门帘，寒风还是进来了。它比我更熟悉墙上的每一道细微裂缝。<br>
+就在前一天，我似乎已经预感到大雪来临。我劈好足够烧半个月的柴禾，整齐地码在窗台下；把院子扫得干干净净，无意中像在迎接一位久违的贵宾——把生活中的一些事情扫到一边，腾出干净的一片地方来让雪落下。下午我还走出村子，到田野里转了一圈。我没顾上割回来的一地葵花杆，将在大雪中站一个冬天。每年下雪之前，都会发现有一两件顾不上干完的事而被搁一个冬天。冬天，有多少人放下一年的事情，像我一样用自己那只冰手，从头到尾地抚摸自己的一生。<br>
+屋子里更暗了，我看不见雪。但我知道雪花落，漫天地落。落在房顶和柴垛上，落在扫干净的院子里，落在远远近近的路上。我要等雪落定了再出去。我再不像以往，每逢第一场雪，都会怀着莫名的兴奋，站在屋檐下观看好一阵，或光着头钻进大雪中，好像有意要让雪知道世上有我这样一个人，却不知道寒冷早已盯住了自己活蹦乱跳的年轻生命。<br>
+经过许多个冬天之后，我才渐渐明白自己再躲不过雪，无论我残缩在屋子里，还是远在冬天的另一个地方，纷纷扬扬的雪，都会落在我正经历的一段岁月里。当一个人的岁月像荒野一样敞开时，他便再无法照管好自己。<br>
+就像现在，我紧围着火炉，努力想烤热自己。我的一根骨头，却露在屋外的寒风中，隐隐作疼。那是我多年前冻坏的一根骨头，我再不能像捡一根牛骨头一样，把它捡回到火炉旁烤熟。它永远地冻坏在那段天亮前的雪路上了。<br>
+那个冬天我十四岁，赶着牛车去沙漠里拉柴禾。那时一村人都是靠长在沙漠里的一种叫梭梭的灌木取暖过冬。因为不断砍挖，有柴禾的地方越来越远。往往要用一天半夜时间才能拉回一车柴禾。每次拉柴禾，都是母亲半夜起来做好饭，装好水和馍馍，然后叫醒我。有时父亲也会起来帮我套好车。我对寒冷的认识是从那些夜晚开始的。<br>
+牛车一走出村子，寒冷便从四面八方拥围而来，把你从家里带出的那点温暖搜刮得一干二净，让你浑身上下只剩下寒冷。<br>
+那个夜晚并不比其他夜晚更冷。<br>
+只是我一个人赶着牛车进沙漠。以往牛车一出村，就会听到远远近近的雪路上其他牛车的走动声，赶车人隐约的吆喝声。只要紧赶一阵路，便会追上一辆或好几辆去拉柴的牛车，一长串，缓行在铅灰色的冬夜里。那种夜晚天再冷也不觉得。因为寒风在吹好几个人，同村的、邻村的、认识和不认识的好几架牛车在这条夜路上抵挡着寒冷。<br>
+而这次，一野的寒风吹着我一个人。似乎寒冷把其他一切都收拾掉了。现在全部地对付我。<br>
+我掖着羊皮大衣，一动不动爬在牛车里，不敢大声吆喝牛，免得让更多的寒冷发现我。从那个夜晚我懂得了隐藏温暖——在凛冽的寒风中，身体中那点温暖正一步步退守到一个隐秘的有时连我自己都难以找到的深远处--我把这点隐深的温暖节俭地用于此后多年的爱情和生活。我的亲人们说我是个很冷的人，不是的，我把仅有的温暖全给了你们。<br>
+许多年后有一股寒风，从我自以为火热温暖的从未被寒冷浸入的内心深处阵阵袭来时，我才发现穿再厚的棉衣也没用了。生命本身有一个冬天，它已经来临。<br>
+天亮后，牛车终于到达有柴禾的地方。我的一条腿却被冻僵了，失去了感觉。我试探着用另一条腿跳下车，拄着一根柴禾棒活动了一阵，又点了一堆火烤了一会儿，勉强可以行走了。腿上的一块骨头却生疼起来，是我从未体验过的一种疼，像一根根针刺在骨头上又狠命往骨髓里钻。这种疼感一直延续到以后所有的冬天以及夏季里阴冷的日子。<br>
+太阳落地时，我装着半车柴禾回到家里，父亲一见就问我：怎么拉了这点柴，不够两天烧的。我没吭声。也没向家里说腿冻坏的事。<br>
+我想很快会暖和过来。<br>
+那个冬天要是稍短些，家里的火炉要是稍旺些，我要是稍把这条腿当回事些，或许我能暖和过来。可是现在不行了。隔着多少个季节，今夜的我，围抱火炉，再也暖不热那个遥远冬天的我；那个在上学路上不慎掉进冰窟窿，浑身是冰往回跑的我；那个跺着冻僵的双脚，捂着耳朵在一扇门外焦急等待的我……我再不能把他们唤回到这个温暖的火炉旁。我准备了许多柴禾，是准备给这个冬天的。我才三十岁，肯定能走过冬天。<br>
+但在我周围，肯定有个别人不能像我一样度过冬天。他们被留住了。冬天总是一年一年地弄冷一个人，先是一条腿、一块骨头、一副表情、一种心情……尔后整个人生。<br>
+我曾在一个寒冷的早晨，把一个浑身结满冰霜的路人让进屋子，给他倒了一杯热茶。那是个上了年纪的人，身上带着许多个冬天的寒冷，当他坐在我的火炉旁时，炉火须臾间变得苍白。我没有问他的名字，在火炉的另一边，我感到迎面逼来的一个老人的透骨寒气。<br>
+他一句话不说。我想他的话肯定全冻硬了，得过一阵才能化开。<br>
+大约上了半个时辰，他站起来，朝我点了一下头，开门走了。我以为他暖和过来了。<br>
+第二天下午，听人说村西边冻死了一个人。我跑过去，看见个上了年纪的人躺在路边，半边脸埋在雪中。<br>
+我第一次看到一个人被冻死。<br>
+我不敢相信他已经死了。他的生命中肯定还深藏着一点温暖，只是我们看不见。一个人最后的微弱挣扎我们看不见；呼唤和呻吟我们听不见。<br>
+我们认为他死了。彻底地冻僵了。<br>
+他的身上怎么能留住一点点温暖呢？靠什么去留住。他的烂了几个洞、棉花露在外面的旧棉衣？底磨快通、一边帮已经脱落的那双鞋？还有他的比多少个冬天加起来还要寒冷的心境......<br>
+落在一个人一生中的雪，我们不能全部看见。每个人都在自己的生命中，孤独地过冬。我们帮不了谁。我的一小炉火，对这个贫寒一生的人来说，显然杯水车薪。他的寒冷太巨大。<br>
+我有一个姑妈，住在河那边的村庄里，许多年前的那些个冬天，我们兄弟几个常手牵手走过封冻的玛河去看望她。每次临别前，姑妈总要说一句；天热了让你妈过来喧喧。<br>
+姑妈年老多病。她总担心自己过不了冬天。天一冷她便足不出户，偎在一间矮土屋里，抱着火炉，等待春天来临。<br>
+一个人老的时候，是那么渴望春天来临。尽管春天来了她没有一片要抽芽的叶子，没有半瓣要开放的花朵。春天只是来到大地上，来到别人的生命中。但她还是渴望春天，她害怕寒冷。<br>
+我一直没有忘记姑妈的这句话，也不只一次地把它转告给母亲。母亲只是望望我，又忙着做她的活。母亲不是一个人在过冬，她有五六个没长大的孩子，她要拉扯着他们度过冬天，不让一个孩子受冷。她和姑妈一样期盼着春天。<br>
+天热了，母亲会带着我们，趟过河，到对岸的村子里看望姑妈。姑妈也会走出蜗居一冬的土屋，在院子里晒着暖暖的太阳和我们说说笑笑……多少年过去了，我们一直没有等到这个春天。好像姑妈那句话中的“天”一直没有热。<br>
+姑妈死在几年后的一个冬天、我回家过年，记得是大年初四，我陪着母亲沿一条即将解冻的马路往回走。母亲在那段路上告诉我姑妈去世的事。她说：“你姑妈死掉了。”<br>
+母亲说得那么平淡，像在说一件跟死亡无关的事情。<br>
+“怎么死的？”我似乎问得更平淡。<br>
+母亲没有直接回答我。她只是说：“你大哥和你弟弟过去帮助料理了后事。”<br>
+此后的好一阵，我们再没说这事，只顾静静地走路。快到家门口时，母亲说了句：天热了。<br>
+我抬头看了看母亲，她的身上正冒着热气，或许是走路的缘故，不过天气真的转热了、对母亲来说，这个冬天已经过去了。<br>
+“天热了过来喧喧。”我又想起姑妈的这句话，这个春天再不属于姑妈了。她熬过了许多个冬天还是被这个冬天留住了。我想起爷爷奶奶也是分别死在几年前的冬天。母亲还活着。我们在世上的亲人会越来越少。我告诉自己，不管天冷天热，我们都常过来和母亲坐坐。<br>
+母亲拉扯大她的七个儿女。她老了。我们长高长大的七个儿女，或许能为母亲挡住一丝的寒冷。每当儿女们回到家里，母亲都会特别高兴，家里也顿时平添热闹的气氛。<br>
+但母亲斑日的双鬓分明让我感到她一个人的冬天已经来临，那些雪开始不退、冰霜开始不融化——无论春天来了，还是儿女们的孝心和温暖备至。<br>
+随着三十年这样的人生距离，我感觉着母亲独自在冬天的透心寒冷。我无能为力。<br>
+雪越下越大。天彻底黑透了。<br>
+我围抱着火炉，烤热漫长一生的一个时刻。我知道这一时刻之外，我其余的岁月，我的亲人们的岁月，远在屋外的大雪中，被寒风吹彻。</p>
+
+                    </div>
+                     <div class="post-toc">
+                            
+                     </div>
+                    <section class="post-copyright en">
+                        <!--en-->
+                        <p class="copyright-item">
+                            <span>Author:</span>
+			    <span>Jane</span>
+<!--
+                            <span>Jane's world</span>
+-->
+
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>Permalink:</span>
+                            <span><a href="https://crystal-1224.github.io/post/han-feng-chui-che/">https://crystal-1224.github.io/post/han-feng-chui-che/</a></span>
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>License:</span>
+                            <span>MIT License</span>
+                        </p>
+                    </section>
+                    <section class="post-copyright zh">
+                        <!--zh-->
+                        <p class="copyright-item ">
+                            <span>&#x4F5C;&nbsp;&nbsp;&nbsp;&#x8005;:</span>
+			    <span>Jane</span>
+<!--
+			    <span>Jane's world</span>
+-->
+
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>&#x6C38;&#x4E45;&#x94FE;&#x63A5;:</span>
+                            <span><a href="https://crystal-1224.github.io/post/han-feng-chui-che/">https://crystal-1224.github.io/post/han-feng-chui-che/</a></span>
+                        </p>
+
+                        <p class="copyright-item">
+                            <span>&#x534F;&nbsp;&nbsp;&nbsp;&#x8BAE;:</span>
+                            <span>MIT License</span>
+                        </p>
+                    </section>
+                    <!--en-->
+                    
+                   
+
+                    <section class="post-nav">
+	               
+                        
+                        <a class="next" rel="next" href="https://crystal-1224.github.io/post/ci-di-jin-sheng/">
+                            《此地今生》
+                        </a>
+                        
+                    </section>
+
+	
+
+
+		</article>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        		   
+			    <div id="player"></div>
+			    
+		
+<footer id="footer" class="footer" style="height: 0px">
+
+            <div class="copyright">
+                Powered by myself
+                    <b id="hitokoto"></b><br>
+                    <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+
+                    Jane&#39;s world &copy;Copyright
+                        <script>
+                            var date = new Date();
+                            document.write("" + date.getFullYear());
+                        </script> <img src="https://i.loli.net/2020/03/31/kG71rUoEW5YQq4h.gif"  alt="dandan" />
+                        | 本站已经运行了
+                <strong><script type="text/javascript">		
+
+                var urodz= new Date("08/30/2023");
+                var now = new Date();
+                var ile = now.getTime() - urodz.getTime();
+                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+                document.write(+dni)
+                </script>
+                </strong>天 | 🗞
+		<a class="rss" href="https://crystal-1224.github.io//atom.xml" target="_blank"><strong>RSS</strong></a>
+            </div>
+
+<!-- commentTyping -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.2/assets/media/script/commentTyping.js"></script>
+
+<!-- Click loveHeart -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/love.js"></script>
+        </footer>
+
+        
+
+                <script>
+			
+
+                    function LoadPlayer() {
+                        var music_array = [];
+                        
+                        music_array.push({
+                            name: 'Das Beste',
+                            url: 'http://music.163.com/song/media/outer/url?id=26546299.mp3',
+                            artist: 'Silbermond',
+                            cover: 'https://github.com/Crystal-1224/Resource/blob/main/2467304092791249.jpg',
+//			    lrc: "https://crystal-1224.github.io//media/music_lrc/rangjiu.lrc"
+                        });
+                        
+                        console.log(" MusicList: " + music_array);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: music_array
+                        });
+                        
+                    }
+
+                    LoadPlayer();
+                    
+
+                    
+//                    hitokoto();
+                    hljs.initHighlighting();
+		    console.clear();
+                    console.log("\n %c \u26a1Theme:Chic-Unique Author's Blog:https://github.com/xiangyi715  Write By xiangyi  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+</script>
+                
+
+    </div>
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+<script color="0,0,0" opacity="0.4" count="10" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+<script>
+    scroll();
+</script>
+
+
+<!--返回顶部-->
+<body id="top">
+<p id="back-to-top"><a href="#top"><span></span></a></p>
+</body>
+
+<style>
+	p#back-to-top {
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+	}
+	
+	p#back-to-top a {
+		text-align: center;
+		text-decoration: none;
+		color: #d1d1d1;
+		display: block;
+		width: 30px;
+	    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+		-moz-transition: color 2s;
+		-webkit-transition: color 2s;
+		-o-transition: color 2s;
+	}
+	p#back-to-top a:hover {
+		color: #ff6666;
+	}
+	p#back-to-top a span {
+		background: url(https://i.loli.net/2020/03/13/EwViLWsXlIcgOzm.png) no-repeat center center;
+		border-radius: 8px;
+		display: block;
+		height: 55px;
+		width: 30px;
+		margin-bottom: 8px;
+	      /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+		-moz-transition: background 2s;
+		-webkit-transition: background 2s;
+		-o-transition: background 2s;
+	}
+	
+	#back-to-top a:hover span {
+		background: url(https://i.loli.net/2020/03/13/IiApotjMvyOnJEH.png) no-repeat center center;
+	}
+</style>
+
+<script>
+$(document).ready(function() {
+    //首先将#back-to-top隐藏
+    $("#back-to-top").hide();
+ 
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                $("#back-to-top").fadeIn(1500);
+            }
+            else {
+                $("#back-to-top").fadeOut(1500);
+            }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            },
+            500);
+            return false;
+        });
+    });
+});
+</script>
+
+<!--
+<style>
+	.backToTop {
+	display: none;
+	width: 18px;
+	line-height: 1.2;
+	padding: 5px 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	position: fixed;
+	_position: absolute;
+	right: 10px;
+	bottom: 100px;
+	_bottom: "auto";
+	cursor: pointer;
+	opacity: .6;
+	filter: Alpha(opacity = 60);
+}
+</style>
+<script>
+(function() {
+    var $backToTopTxt = "返回顶部"
+    $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body")).text($backToTopTxt)
+	.attr("title", $backToTopTxt).click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        },120);
+    })
+    $backToTopFun = function() {
+        var st = $(document).scrollTop(),
+        winh = $(window).height(); (st > 0) ? $backToTopEle.show() : $backToTopEle.hide();
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+            $backToTopEle.css("top", st + winh - 166);
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() {
+        $backToTopFun();
+    });
+})();
+</script>
+-->
+
+</html>
